@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="94dp"
+                app:srcCompat="@drawable/bllogo" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/card_number"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/card_num_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:foregroundGravity="center_vertical|center"
+                android:gravity="center"
+                android:hint="@string/hint_card_number"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:shadowColor="@color/colorAccent"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/colorAccent"
+                android:textColorLink="@color/colorAccent"
+                android:textCursorDrawable="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/search_btn"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/my_button_bg"
+                android:drawableStart="@android:drawable/ic_menu_search"
+                android:text="@string/search_btn"
+                android:textAlignment="textStart"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/search_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/tv_total_sum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/total_sum"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_percent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:foregroundGravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:text="@string/current_percent"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/my_button_bg"
+                    android:popupBackground="@drawable/my_button_bg"
+                    android:spinnerMode="dropdown" />
+
+                <EditText
+                    android:id="@+id/add_sum_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/hint_sum_field"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/colorAccent"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:gravity="fill_horizontal"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/cancel_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/my_button_bg"
+                        android:text="@string/cancel_btn"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/do_action_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/my_button_bg"
+                        android:text="@string/do_action_btn"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/import_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/my_button_bg"
+        android:text="@string/import_btn"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/export_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/my_button_bg"
+        android:text="@string/export_btn"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

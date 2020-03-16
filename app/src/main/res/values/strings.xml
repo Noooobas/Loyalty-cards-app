@@ -1,0 +1,31 @@
+<resources>
+    //Button names
+    <string name="app_name">Карты лояльности</string>
+    <string name="export_btn">Экспорт</string>
+    <string name="import_btn">Импорт</string>
+    <string name="search_btn">Искать</string>
+    <string name="add_btn">Добавление карты</string>
+    <string name="do_action_btn">Выполнить</string>
+    <string name="cancel_btn">Отмена</string>
+
+    //Text values
+    <string name="card_number">Номер карты:</string>
+
+    <string name="total_sum">Общая сумма покупок: %1$d руб.</string>
+    <string name="current_percent">Скидка: %1$d%%</string>
+
+
+    //Dialog
+    <string name="card_not_found">Информация по карте не найдена. Добавить как новую?</string>
+    <string name="add_positive">Добавить</string>
+    <string name="add_negative">Отмена</string>
+
+    //Misc
+    <string name="file_not_found">Файл не найден</string>
+    <string name="hint_card_number">Нажми для ввода</string>
+    <string name="hint_sum_field">Укажи сумму</string>
+    <string name="Exported">Данные успешно экспортированы</string>
+    <string name="Imported">Данные успешно импортированы</string>
+
+
+</resources>
